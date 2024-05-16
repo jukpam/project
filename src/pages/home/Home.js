@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../../componetns/header/Header';
+
 
 const Home = () => {
     return (
