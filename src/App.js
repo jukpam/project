@@ -7,7 +7,12 @@ import Books from "./pages/books/Books";
 import Test from "./pages/test/Test";
 import Store from "./pages/store/Store";
 import NotFound from "./componetns/notFound/NotFound";
+import Flashcard from "./pages/flashcard/Flashcard";
+import Basic from "./pages/basic/Basic";
+import Intermediate from "./pages/intermediate/Intermediate";
+import Advanced from "./pages/advanced/Advanced";
 
+import Footer from "./componetns/footer/Footer";
 
 const App = () => {
     return (
@@ -21,9 +26,14 @@ const App = () => {
                     <Route path="/books" element={<Books />}/>
                     <Route path="/test" element={<Test />}/>
                     <Route path="/store" element={<Store />}/>
+                    <Route path="/courses/flashcard" element={<Flashcard />}/>
+                    <Route path="/courses/basic" element={<Basic />}/>
+                    <Route path="/courses/intermediate" element={<Intermediate />}/>
+                    <Route path="/courses/advanced" element={<Advanced />}/>
                     <Route path="*" element={<NotFound />}/>
                 </Routes>
             </BrowserRouter>
+            <Footer />
         </div>
     );
 }
